@@ -2,21 +2,21 @@ class AstIndex < Formula
   desc "Fast code search CLI for Android, iOS, TypeScript, Rust, Ruby, C#, Python, Go, Perl, C++ projects"
   homepage "https://github.com/defendend/Claude-ast-index-search"
   license "MIT"
-  version "3.10.4"
+  version "3.11.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/defendend/Claude-ast-index-search/releases/download/v3.10.4/ast-index-v3.10.4-darwin-arm64.tar.gz"
-      sha256 "bb64ac469faa005f91d64c0150ad3f87a9344b6e3530a0533189762075665b9b"
+      url "https://github.com/defendend/Claude-ast-index-search/releases/download/v3.11.0/ast-index-v3.11.0-darwin-arm64.tar.gz"
+      sha256 "e8f8e1fb8c1198fc682adb3265de963ae1b1fae2e8c4bc8e0b08ba1773c598d2"
     else
-      url "https://github.com/defendend/Claude-ast-index-search/releases/download/v3.10.4/ast-index-v3.10.4-darwin-x86_64.tar.gz"
-      sha256 "6e3fc94bc67eddc5fcef4795a8c3de6e738562b7eeb551ed25057a9d5a46cea5"
+      url "https://github.com/defendend/Claude-ast-index-search/releases/download/v3.11.0/ast-index-v3.11.0-darwin-x86_64.tar.gz"
+      sha256 "f3943001b3cb93f2ae5e4db3ea89391e25e3374d4704d07fb6ed3fe25ad89563"
     end
   end
 
   on_linux do
-    url "https://github.com/defendend/Claude-ast-index-search/releases/download/v3.10.4/ast-index-v3.10.4-linux-x86_64.tar.gz"
-    sha256 "53f96262b7642b94d48f59e0d845b04d118e2d4083e7041b539621be99917fda"
+    url "https://github.com/defendend/Claude-ast-index-search/releases/download/v3.11.0/ast-index-v3.11.0-linux-x86_64.tar.gz"
+    sha256 "6f1a231cef41342ed8f8727d12f495f59d47d91c1a6173ddd3372a56f3b22bae"
   end
 
   def install
@@ -24,6 +24,6 @@ class AstIndex < Formula
   end
 
   test do
-    assert_match "ast-index v3.10.4", shell_output("#{bin}/ast-index version")
+    assert_match "ast-index v3.11.0", shell_output("#{bin}/ast-index version")
   end
 end
