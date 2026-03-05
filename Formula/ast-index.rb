@@ -7,16 +7,16 @@ class AstIndex < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/defendend/Claude-ast-index-search/releases/download/v3.26.2/ast-index-v3.26.2-darwin-arm64.tar.gz"
-      sha256 "748c1f9649c50942b97f98e0f06d5719c14af9cd0d8fffaca3382e5f077c34b7"
+      sha256 "650b621b8208f6cc0b502aef6872732835763596dfa15a75895c7806c8bd86a9"
     else
       url "https://github.com/defendend/Claude-ast-index-search/releases/download/v3.26.2/ast-index-v3.26.2-darwin-x86_64.tar.gz"
-      sha256 "6ca8d566d5ba1f84db48d0983da123b40a688bb820763651e4290bd2fe11e809"
+      sha256 "df1d81aa468c078e8b5dc9608d17f5e92cbcccdfc4d5fc87da463c79e5c8f23e"
     end
   end
 
   on_linux do
     url "https://github.com/defendend/Claude-ast-index-search/releases/download/v3.26.2/ast-index-v3.26.2-linux-x86_64.tar.gz"
-    sha256 "2f1e1e77b751b65ecdd083cbe033f88a25e6cdec148f327dee3e36531fa7a400"
+    sha256 "c410f6ac55c46b0cf0e62f09d701a1c9ac61416a83da3f0c436d400d4be3a15c"
   end
 
   def install
