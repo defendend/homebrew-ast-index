@@ -2,25 +2,25 @@ class AstIndex < Formula
   desc "Fast code search CLI for Android, iOS, TypeScript, Rust, Ruby, C#, Python, Go, Perl, C++ projects"
   homepage "https://github.com/defendend/Claude-ast-index-search"
   license "MIT"
-  version "3.32.3"
+  version "3.33.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/defendend/Claude-ast-index-search/releases/download/v3.32.3/ast-index-v3.32.3-darwin-arm64.tar.gz"
-      sha256 "c1a9bf1720f5949d65c92f1ac4b72dd8cff76520ccc2f1c77324ddc1e936e0ed"
+      url "https://github.com/defendend/Claude-ast-index-search/releases/download/v3.33.0/ast-index-v3.33.0-darwin-arm64.tar.gz"
+      sha256 "0f057d24497414a3ce1956592af88308db67455ebb7a862882a22bd63da13f0c"
     else
-      url "https://github.com/defendend/Claude-ast-index-search/releases/download/v3.32.3/ast-index-v3.32.3-darwin-x86_64.tar.gz"
-      sha256 "a8ac596610e30a9ae8a361b043673b001072358456fb056aab9700546552e84c"
+      url "https://github.com/defendend/Claude-ast-index-search/releases/download/v3.33.0/ast-index-v3.33.0-darwin-x86_64.tar.gz"
+      sha256 "22f1e28b00f16070dc2daab3d8d7afa7891ecaf239aee4ee55ede806a572d87f"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/defendend/Claude-ast-index-search/releases/download/v3.32.3/ast-index-v3.32.3-linux-arm64.tar.gz"
-      sha256 "39c129c6ae1d8e48fcb0537407b8928ea01dd4f92e0f0860acb70c2cffd99828"
+      url "https://github.com/defendend/Claude-ast-index-search/releases/download/v3.33.0/ast-index-v3.33.0-linux-arm64.tar.gz"
+      sha256 "d53a8671f3e7f53665fd8949d2dd76fcfc53b285b2d92a3cc55a552e6f4277f0"
     else
-      url "https://github.com/defendend/Claude-ast-index-search/releases/download/v3.32.3/ast-index-v3.32.3-linux-x86_64.tar.gz"
-      sha256 "cf6a3fd6733063d6c9fab858d5205a871c4d3567aa8886f41eb2bd1a5adde566"
+      url "https://github.com/defendend/Claude-ast-index-search/releases/download/v3.33.0/ast-index-v3.33.0-linux-x86_64.tar.gz"
+      sha256 "237e5a0fd6c59ac5fbc47733fbb196138771e0ffe27ee227dd865f65d090410d"
     end
   end
 
@@ -29,6 +29,6 @@ class AstIndex < Formula
   end
 
   test do
-    assert_match "ast-index v3.32.3", shell_output("#{bin}/ast-index version")
+    assert_match "ast-index v3.33.0", shell_output("#{bin}/ast-index version")
   end
 end
